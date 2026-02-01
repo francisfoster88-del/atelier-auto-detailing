@@ -240,5 +240,45 @@ input:focus, select:focus, textarea:focus{
 
 @media (max-width: 420px){
   h1{font-size:32px}
-  .gallery{grid-template-columns:1fr}
+  .gallery{grid-template-columns:  
+/* --- Mobile spacing + header tidy (paste at END of styles.css) --- */
+@media (max-width: 520px){
+  .container{padding: 0 20px;}
+
+  /* Make header breathe + wrap nicely */
+  .nav{
+    padding: 14px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Brand tighter + more readable */
+  .brand__mark{width:40px;height:40px;border-radius:12px;}
+  .brand__name{font-size:14px;}
+  .brand__sub{font-size:11px;}
+
+  /* Reduce the crowding at the top right */
+  .nav__cta{
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  /* Make buttons slimmer on mobile */
+  .btn{
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  /* Give hero content more breathing room */
+  .hero{padding: 22px 0 28px; gap: 16px;}
+  h1{font-size: 34px; line-height: 1.08; margin: 10px 0 12px;}
+  .lead{font-size: 16px; line-height: 1.65;}
+
+  /* Trust bullets spacing */
+  .trust{gap: 10px; margin-top: 10px;}
+  .trust__item{font-size: 12.5px;}
+
+  /* Sections slightly tighter but cleaner */
+  .section{padding: 44px 0;}
 }
