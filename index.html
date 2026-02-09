@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Atelier Auto Detailing | Premium Mobile Detailing in Kent</title>
   <meta name="description" content="Premium mobile car detailing across Kent. Interior resets, signature details, and maintenance plans delivered to your driveway. Quote fast on WhatsApp." />
-  <link rel="icon" href="/atelier-favicon-512-dark.png" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
@@ -13,7 +12,11 @@
   <header class="header">
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="Atelier Auto Detailing">
-        <img class="brand__logo" src="/atelier-horizontal-dark.svg" alt="Atelier Auto Detailing" />
+        <div class="brand__icon">A</div>
+        <div class="brand__text">
+          <div class="brand__name">Atelier Auto Detailing</div>
+          <div class="brand__tag">Premium Mobile • Kent</div>
+        </div>
       </a>
 
       <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
@@ -55,7 +58,7 @@
             <span class="chip">Appointment-based</span>
           </div>
 
-          <h1>Premium mobile detailing in Kent.</h1>
+          <h1>Premium mobile detailing across Kent.</h1>
           <p>
             Interior resets, signature details and maintenance plans — delivered to your driveway.
             Fastest quote: send your <strong>postcode</strong>, <strong>car model</strong> and <strong>4 photos</strong> on WhatsApp.
@@ -90,8 +93,8 @@
           </div>
           <ul class="checklist">
             <li>Deep vacuum + crevices</li>
-            <li>Plastics, mats, touchpoints refreshed</li>
-            <li>Glass cleaned + finishing touches</li>
+            <li>Seats, mats, plastics refreshed</li>
+            <li>Glass + finishing touches</li>
             <li>Light stain spotting included</li>
           </ul>
           <a class="btn btn--primary btn--full" href="#quote">Request a quote</a>
@@ -151,11 +154,11 @@
         <div class="noteRow">
           <div class="note">
             <h4>Add-ons</h4>
-            <p class="muted micro">Pet hair • heavy soiling • mould/mildew • upholstery extraction • odour treatment • ceramic sealant</p>
+            <p class="muted micro">Pet hair • heavy soiling • odour treatment • upholstery extraction • ceramic sealant</p>
           </div>
           <div class="note">
             <h4>Maintenance plans</h4>
-            <p class="muted micro">Monthly/fortnightly slots available. Great for busy owners and families.</p>
+            <p class="muted micro">Monthly/fortnightly slots available. Great for busy owners.</p>
           </div>
         </div>
       </div>
@@ -213,7 +216,7 @@
               <a class="btn btn--primary" href="https://wa.me/447508011007" target="_blank" rel="noreferrer">WhatsApp quote</a>
               <a class="btn btn--ghost" href="tel:07508011007">Call</a>
             </div>
-            <p class="micro muted">If you change numbers later, update the WhatsApp link and phone number in this file.</p>
+            <p class="micro muted">If you change numbers later, update the WhatsApp link + the JS file.</p>
           </div>
 
           <form class="form" id="miniForm">
@@ -238,7 +241,7 @@
               </select>
             </label>
             <button class="btn btn--primary btn--full" type="submit">Send to WhatsApp</button>
-            <p class="micro muted">This sends a pre-filled WhatsApp message (no payment on the site).</p>
+            <p class="micro muted">This sends a pre-filled WhatsApp message (no payments on the site).</p>
           </form>
         </div>
       </div>
@@ -306,7 +309,7 @@
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer__left">
-          <img class="footer__logo" src="/atelier-icon-dark.svg" alt="" />
+          <div class="footer__logoIcon">A</div>
           <div>
             <div class="footer__brand">Atelier Auto Detailing</div>
             <div class="micro muted">Premium Mobile • Kent</div>
@@ -323,6 +326,7 @@
     </div>
   </main>
 
-  <script src="./app.js"></script>
+  <!-- IMPORTANT: this must match your repo file name -->
+  <script src="./script.js"></script>
 </body>
 </html>
