@@ -48,7 +48,7 @@
       const car = String(data.get("car") || "").trim();
       const pkg = String(data.get("package") || "").trim();
 
-      // Your WhatsApp number (UK format, no 0, add 44)
+      // WhatsApp number (UK format: no 0, add 44)
       const number = "447508011007";
 
       const msg =
