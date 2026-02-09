@@ -3,285 +3,326 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Atelier Auto Detailing | Premium Mobile Car Detailing in Kent</title>
-  <meta name="description" content="Premium mobile car detailing across Kent. Interior resets, signature details and maintenance plans. Mobile, insured, appointment-based." />
-  <meta name="theme-color" content="#071A2B" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css" />
+  <title>Atelier Auto Detailing | Premium Mobile Detailing in Kent</title>
+  <meta name="description" content="Premium mobile car detailing across Kent. Interior resets, signature details, and maintenance plans delivered to your driveway. Quote fast on WhatsApp." />
+  <link rel="icon" href="/atelier-favicon-512-dark.png" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-  <header class="header" id="top">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="Atelier Auto Detailing home">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__text">
-          <span class="brand__name">Atelier Auto Detailing</span>
-          <span class="brand__sub">Premium Mobile Detailing • Kent</span>
-        </span>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Atelier Auto Detailing">
+        <img class="brand__logo" src="/atelier-horizontal-dark.svg" alt="Atelier Auto Detailing" />
       </a>
 
-      <nav class="menu" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#areas">Service area</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Book</a>
-      </nav>
-
-      <div class="nav__cta">
-        <a class="btn btn--ghost" href="#contact">Get quote</a>
-        <a class="btn btn--solid" id="waTop" href="#" rel="noopener">WhatsApp</a>
-      </div>
-
-      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-    </div>
 
-    <div class="container hero">
-      <div class="hero__left">
-        <p class="eyebrow">Mobile • Insured • Appointment-based</p>
-        <h1>Premium mobile car detailing across Kent.</h1>
-        <p class="lead">
-          Interior resets, signature details and maintenance plans — delivered to your driveway.
-          Designed for busy owners who want it done properly.
-        </p>
-
-        <div class="hero__actions">
-          <a class="btn btn--solid" href="#contact">Book a slot</a>
-          <a class="btn btn--ghost" href="#services">View packages</a>
-        </div>
-
-        <div class="trust">
-          <div class="trust__item"><span class="dot"></span><span>Convenient mobile service</span></div>
-          <div class="trust__item"><span class="dot"></span><span>Professional products</span></div>
-          <div class="trust__item"><span class="dot"></span><span>Quality-first finish</span></div>
-        </div>
-
-        <p class="fineprint">
-          Fastest quote: send your <strong>postcode</strong>, <strong>car model</strong> and <strong>4 photos</strong> on WhatsApp.
-        </p>
-      </div>
-
-      <div class="hero__right">
-        <div class="card">
-          <h3>Most booked</h3>
-          <p class="muted">Interior Reset</p>
-          <ul class="ticks">
-            <li>Deep vacuum + crevices</li>
-            <li>Seats, mats, plastics refreshed</li>
-            <li>Glass + finishing touches</li>
-          </ul>
-          <div class="card__row">
-            <div>
-              <div class="price">From £180</div>
-              <div class="muted small">Final price depends on size/condition</div>
-            </div>
-            <a class="btn btn--solid btn--sm" id="waCard" href="#" rel="noopener">Message to book</a>
-          </div>
-          <p class="small muted">Evening slots available for interior-only (limited).</p>
-        </div>
-      </div>
+      <nav class="nav" id="nav">
+        <a href="#packages">Packages</a>
+        <a href="#areas">Areas</a>
+        <a href="#work">Work</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section class="section" id="services">
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__panel">
+      <div class="drawer__top">
+        <span class="drawer__title">Menu</span>
+        <button class="drawer__close" id="drawerClose" aria-label="Close menu">✕</button>
+      </div>
+      <a href="#packages">Packages</a>
+      <a href="#areas">Areas</a>
+      <a href="#work">Work</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="drawer__backdrop" id="drawerBackdrop"></div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="chips">
+            <span class="chip">Mobile</span>
+            <span class="chip">Insured</span>
+            <span class="chip">Appointment-based</span>
+          </div>
+
+          <h1>Premium mobile detailing in Kent.</h1>
+          <p>
+            Interior resets, signature details and maintenance plans — delivered to your driveway.
+            Fastest quote: send your <strong>postcode</strong>, <strong>car model</strong> and <strong>4 photos</strong> on WhatsApp.
+          </p>
+
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="#quote">Get a quote</a>
+            <a class="btn btn--ghost" href="#packages">View packages</a>
+          </div>
+
+          <div class="trustRow">
+            <div class="trustRow__item">
+              <span class="trustRow__label">Response</span>
+              <span class="trustRow__value">Same day</span>
+            </div>
+            <div class="trustRow__item">
+              <span class="trustRow__label">Slots</span>
+              <span class="trustRow__value">Evenings + Weekends</span>
+            </div>
+            <div class="trustRow__item">
+              <span class="trustRow__label">Service</span>
+              <span class="trustRow__value">Driveway-ready</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="cardHeader">
+            <span class="badge">Most booked</span>
+            <h2>Interior Reset</h2>
+            <p class="muted">From <strong>£120</strong> • 2–3 hours</p>
+          </div>
+          <ul class="checklist">
+            <li>Deep vacuum + crevices</li>
+            <li>Plastics, mats, touchpoints refreshed</li>
+            <li>Glass cleaned + finishing touches</li>
+            <li>Light stain spotting included</li>
+          </ul>
+          <a class="btn btn--primary btn--full" href="#quote">Request a quote</a>
+          <p class="micro muted">Prices vary by vehicle size + condition. Photos help us quote accurately.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="packages">
       <div class="container">
-        <div class="section__head">
+        <div class="sectionHead">
           <h2>Packages</h2>
-          <p class="muted">Simple, premium options. “From” pricing keeps it fair — exact quote after photos/condition.</p>
+          <p class="muted">Simple pricing signals. Final quote after photos (postcode + model + 4 pics).</p>
         </div>
 
         <div class="grid3">
-          <article class="service">
-            <h3>Maintenance Plan</h3>
-            <p class="muted">For clients who want their car consistently sharp. Members only after first service.</p>
+          <article class="priceCard">
+            <h3>Maintenance Clean</h3>
+            <p class="price">From <strong>£65</strong></p>
+            <p class="muted">Ideal for regular upkeep.</p>
             <ul>
-              <li>Exterior safe wash + wheels</li>
-              <li>Interior tidy + touchpoints</li>
-              <li>Glass + finishing touches</li>
-              <li>Priority booking</li>
+              <li>Safe wash + dry</li>
+              <li>Wheels + tyres dressed</li>
+              <li>Quick interior tidy + glass</li>
             </ul>
-            <div class="service__meta">
-              <span class="pill">Members</span>
-              <span class="price">From £70</span>
-            </div>
+            <p class="micro muted">1.5–2.5 hours</p>
           </article>
 
-          <article class="service service--featured">
-            <div class="badge">Most booked</div>
+          <article class="priceCard priceCard--featured">
+            <div class="badgeRow"><span class="badge">Best value</span></div>
             <h3>Interior Reset</h3>
-            <p class="muted">Deep clean + refresh. Best value for busy people, pets and daily drivers.</p>
+            <p class="price">From <strong>£120</strong></p>
+            <p class="muted">For cars that need a proper refresh.</p>
             <ul>
               <li>Deep vacuum + crevices</li>
-              <li>Seats & mats refreshed</li>
-              <li>Plastics cleaned + protected</li>
-              <li>Glass streak-free</li>
+              <li>Plastics + mats refreshed</li>
+              <li>Glass cleaned</li>
+              <li>Light stain spotting</li>
             </ul>
-            <div class="service__meta">
-              <span class="pill">2–3 hours</span>
-              <span class="price">From £180</span>
-            </div>
+            <p class="micro muted">2–3 hours</p>
           </article>
 
-          <article class="service">
+          <article class="priceCard">
             <h3>Signature Detail</h3>
-            <p class="muted">A proper full detail. Interior Reset + exterior deep clean + protection.</p>
+            <p class="price">From <strong>£220</strong></p>
+            <p class="muted">Deep clean inside + out.</p>
             <ul>
-              <li>Safe wash + wheels detailed</li>
+              <li>Pre-wash + safe contact wash</li>
               <li>Decon where needed (tar/iron)</li>
-              <li>Interior Reset included</li>
-              <li>Protection applied</li>
+              <li>Interior reset level clean</li>
+              <li>Protection top-up</li>
             </ul>
-            <div class="service__meta">
-              <span class="pill">3–5 hours</span>
-              <span class="price">From £260</span>
-            </div>
+            <p class="micro muted">3–5 hours</p>
           </article>
         </div>
 
-        <div class="addons">
-          <h3>Add-ons</h3>
-          <div class="addons__grid">
-            <div class="addon"><strong>Pet hair / heavy soiling</strong><span class="muted">from £20</span></div>
-            <div class="addon"><strong>Odour treatment</strong><span class="muted">from £25</span></div>
-            <div class="addon"><strong>Seat stain treatment</strong><span class="muted">from £25</span></div>
-            <div class="addon"><strong>Headlight restore</strong><span class="muted">from £40</span></div>
+        <div class="noteRow">
+          <div class="note">
+            <h4>Add-ons</h4>
+            <p class="muted micro">Pet hair • heavy soiling • mould/mildew • upholstery extraction • odour treatment • ceramic sealant</p>
           </div>
-          <p class="small muted">Tip: add-ons are confirmed after photos or a quick look on arrival.</p>
+          <div class="note">
+            <h4>Maintenance plans</h4>
+            <p class="muted micro">Monthly/fortnightly slots available. Great for busy owners and families.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section section--alt" id="areas">
       <div class="container">
-        <div class="section__head">
+        <div class="sectionHead">
           <h2>Service area</h2>
-          <p class="muted">Serving <strong>Kent</strong>. We cluster bookings to keep travel low and quality high.</p>
+          <p class="muted">Kent-wide with focus around Medway and nearby premium neighbourhoods.</p>
         </div>
 
-        <div class="grid2">
-          <div class="panel">
-            <h3>Core coverage</h3>
-            <p class="muted">Priority slots near Medway and surrounding areas.</p>
-            <div class="chips">
-              <span class="chip">Medway</span>
-              <span class="chip">Gillingham</span>
-              <span class="chip">Rainham</span>
-              <span class="chip">Chatham</span>
-              <span class="chip">Rochester</span>
-              <span class="chip">Sittingbourne</span>
-            </div>
-          </div>
-
-          <div class="panel">
-            <h3>Across Kent</h3>
-            <p class="muted">We also cover Maidstone, Canterbury, Ashford, Sevenoaks and more (travel fees may apply).</p>
-            <div class="chips">
-              <span class="chip">Maidstone</span>
-              <span class="chip">Canterbury</span>
-              <span class="chip">Ashford</span>
-              <span class="chip">Sevenoaks</span>
-              <span class="chip">Tunbridge Wells</span>
-              <span class="chip">Dartford</span>
-            </div>
-          </div>
+        <div class="pillGrid">
+          <span class="pill">Medway</span>
+          <span class="pill">Maidstone</span>
+          <span class="pill">Sevenoaks</span>
+          <span class="pill">Tunbridge Wells</span>
+          <span class="pill">Canterbury</span>
+          <span class="pill">Dartford</span>
+          <span class="pill">Rochester</span>
+          <span class="pill">Chatham</span>
+          <span class="pill">Gillingham</span>
+          <span class="pill">Sittingbourne</span>
         </div>
+
+        <p class="micro muted">Not listed? Send your postcode — if we can get to you, we’ll tell you.</p>
       </div>
     </section>
 
     <section class="section" id="work">
       <div class="container">
-        <div class="section__head">
-          <h2>Recent work</h2>
-          <p class="muted">Add your before/after photos here. Clean, consistent shots convert best.</p>
+        <div class="sectionHead">
+          <h2>Work</h2>
+          <p class="muted">Replace these placeholders with your first 6–12 before/after photos.</p>
         </div>
 
         <div class="gallery">
-          <div class="ph">Before/After</div>
-          <div class="ph">Before/After</div>
-          <div class="ph">Before/After</div>
-          <div class="ph">Before/After</div>
-          <div class="ph">Before/After</div>
-          <div class="ph">Before/After</div>
+          <div class="ph">Before / After 1</div>
+          <div class="ph">Before / After 2</div>
+          <div class="ph">Before / After 3</div>
+          <div class="ph">Before / After 4</div>
+          <div class="ph">Before / After 5</div>
+          <div class="ph">Before / After 6</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="quote">
+      <div class="container">
+        <div class="quoteBox">
+          <div>
+            <h2>Get a quote in 2 minutes</h2>
+            <p class="muted">Send us your postcode, car model and 4 photos. We’ll reply with a price and the next available slots.</p>
+            <div class="quoteBtns">
+              <a class="btn btn--primary" href="https://wa.me/447508011007" target="_blank" rel="noreferrer">WhatsApp quote</a>
+              <a class="btn btn--ghost" href="tel:07508011007">Call</a>
+            </div>
+            <p class="micro muted">If you change numbers later, update the WhatsApp link and phone number in this file.</p>
+          </div>
+
+          <form class="form" id="miniForm">
+            <label>
+              Name
+              <input required name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Postcode
+              <input required name="postcode" placeholder="e.g. ME1" />
+            </label>
+            <label>
+              Car model
+              <input required name="car" placeholder="e.g. BMW X5" />
+            </label>
+            <label>
+              Package
+              <select name="package">
+                <option>Maintenance Clean</option>
+                <option>Interior Reset</option>
+                <option>Signature Detail</option>
+              </select>
+            </label>
+            <button class="btn btn--primary btn--full" type="submit">Send to WhatsApp</button>
+            <p class="micro muted">This sends a pre-filled WhatsApp message (no payment on the site).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>FAQ</h2>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Do you need access to water and power?</summary>
+            <p class="muted">For the best results, yes. If you don’t have either, message us and we’ll tell you what’s possible.</p>
+          </details>
+
+          <details>
+            <summary>How long does it take?</summary>
+            <p class="muted">Most jobs are 2–3 hours. Signature details can be 3–5 hours depending on condition and vehicle size.</p>
+          </details>
+
+          <details>
+            <summary>Why “from” prices?</summary>
+            <p class="muted">Every car is different. Photos let us price fairly (vehicle size, pet hair, heavy soiling, etc.).</p>
+          </details>
+
+          <details>
+            <summary>Do you offer maintenance plans?</summary>
+            <p class="muted">Yes. Monthly or fortnightly plans are great for busy owners — ask us for options.</p>
+          </details>
         </div>
       </div>
     </section>
 
     <section class="section section--alt" id="contact">
       <div class="container">
-        <div class="section__head">
-          <h2>Book / get a quote</h2>
-          <p class="muted">Fast quotes via WhatsApp. Or use the form and we’ll generate a message for you.</p>
+        <div class="sectionHead">
+          <h2>Contact</h2>
+          <p class="muted">Fastest response is WhatsApp.</p>
         </div>
 
-        <div class="grid2">
-          <form class="form" id="quoteForm">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" required placeholder="Your name" />
-            </div>
+        <div class="contactGrid">
+          <div class="contactCard">
+            <h3>WhatsApp</h3>
+            <p class="muted">Send postcode + model + 4 photos</p>
+            <a class="btn btn--primary" href="https://wa.me/447508011007" target="_blank" rel="noreferrer">Message on WhatsApp</a>
+          </div>
 
-            <div class="field">
-              <label for="phone">Phone</label>
-              <input id="phone" name="phone" required placeholder="07..." />
-            </div>
+          <div class="contactCard">
+            <h3>Call</h3>
+            <p class="muted">If you prefer to talk</p>
+            <a class="btn btn--ghost" href="tel:07508011007">Call now</a>
+          </div>
 
-            <div class="field">
-              <label for="postcode">Postcode</label>
-              <input id="postcode" name="postcode" required placeholder="ME7..." />
-            </div>
-
-            <div class="field">
-              <label for="vehicle">Vehicle</label>
-              <input id="vehicle" name="vehicle" required placeholder="e.g. BMW 3 Series" />
-            </div>
-
-            <div class="field">
-              <label for="service">Service</label>
-              <select id="service" name="service" required>
-                <option value="" disabled selected>Select</option>
-                <option>Maintenance Plan</option>
-                <option>Interior Reset</option>
-                <option>Signature Detail</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="notes">Notes (optional)</label>
-              <textarea id="notes" name="notes" rows="4" placeholder="Pet hair, stains, bad condition, preferred day/time etc."></textarea>
-            </div>
-
-            <button class="btn btn--solid" type="submit">Send via WhatsApp</button>
-            <p class="fineprint">We’ll reply fast during working hours.</p>
-          </form>
-
-          <div class="panel contact">
-            <h3>Fastest booking</h3>
-            <p class="muted">Send this on WhatsApp for a quick quote:</p>
-            <ul class="ticks">
-              <li>Postcode</li>
-              <li>Car model</li>
-              <li>Service wanted</li>
-              <li>4 photos (front, rear, driver area, rear/boot)</li>
-            </ul>
-            <a class="btn btn--solid" id="waBottom" href="#" rel="noopener">Message on WhatsApp</a>
-            <p class="small muted">Interior evenings: limited slots from 7pm.</p>
+          <div class="contactCard">
+            <h3>Instagram</h3>
+            <p class="muted">Post before/afters daily</p>
+            <a class="btn btn--ghost" href="#" aria-disabled="true">Add your @handle</a>
           </div>
         </div>
-
-        <footer class="footer">
-          <p class="muted small">© <span id="year"></span> Atelier Auto Detailing • Kent</p>
-        </footer>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <img class="footer__logo" src="/atelier-icon-dark.svg" alt="" />
+          <div>
+            <div class="footer__brand">Atelier Auto Detailing</div>
+            <div class="micro muted">Premium Mobile • Kent</div>
+          </div>
+        </div>
+        <div class="micro muted">© <span id="year"></span> Atelier Auto Detailing</div>
+      </div>
+    </footer>
+
+    <div class="stickyCta">
+      <a class="stickyBtn stickyBtn--ghost" href="#quote">Get quote</a>
+      <a class="stickyBtn stickyBtn--ghost" href="tel:07508011007">Call</a>
+      <a class="stickyBtn stickyBtn--primary" href="https://wa.me/447508011007" target="_blank" rel="noreferrer">WhatsApp</a>
+    </div>
   </main>
 
-  <script src="script.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
