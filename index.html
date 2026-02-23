@@ -1,160 +1,240 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Atelier Auto Detailing</title>
-  <meta name="description" content="Premium mobile car detailing in Kent. Interior deep cleans, exterior details, maintenance services." />
+  <meta name="theme-color" content="#070a12" />
+  <meta name="description" content="Atelier Auto Detailing — Premium mobile car detailing in Kent. Interior resets, exterior detail, paint enhancement & protection." />
+  <title>Atelier Auto Detailing | Premium Mobile Detailing in Kent</title>
+
+  <!-- Favicon (from your gallery folder) -->
+  <link rel="icon" href="assets/images/gallery/favicon_512.png" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">
-        <span class="brand__name">Atelier Auto Detailing</span>
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollBar"></div>
+  </div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Atelier Auto Detailing home">
+        <img class="brand__logo" src="assets/images/gallery/atelier_logo_wordmark_dark.png" alt="Atelier Auto Detailing logo" />
       </a>
 
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-        <a class="ig-link" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noopener">
-          @atelierautodetailing
-        </a>
+      <nav class="nav" id="nav">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Results</a>
+        <a href="#booking">Book</a>
+        <a class="nav__cta" href="#booking">Get a quote</a>
       </nav>
     </div>
   </header>
 
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__panel">
+      <div class="menu__top">
+        <img class="menu__logo" src="assets/images/gallery/atelier_logo_wordmark_dark.png" alt="Atelier Auto Detailing" />
+        <button class="menu__close" id="menuClose" aria-label="Close menu">✕</button>
+      </div>
+
+      <div class="menu__links">
+        <a href="#services" class="menuLink">Services</a>
+        <a href="#packages" class="menuLink">Packages</a>
+        <a href="#gallery" class="menuLink">Results</a>
+        <a href="#booking" class="menuLink">Book</a>
+      </div>
+
+      <div class="menu__ctas">
+        <a class="btn btn--primary" id="menuWhatsApp" href="#">WhatsApp for a quote</a>
+        <a class="btn btn--ghost" href="tel:07508011007">Call 07508 011007</a>
+        <a class="btn btn--ghost" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+
+      <p class="menu__fineprint">Premium mobile detailing in Kent • High-end finish • No shortcuts</p>
+    </div>
+  </div>
+
   <main>
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Premium mobile<br/>car detailing in Kent.</h1>
-          <p>
-            Proper results, clean finishes. Book a maintenance clean, interior reset, or full detail.
-            Fast quotes via Instagram.
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="pill"><span class="dot"></span><span>Premium mobile car detailing in Kent</span></div>
+
+          <h1>Premium detailing.<br />Clean, corrected, protected.</h1>
+          <p class="lead">
+            High-end finishes for clients who care about the details — deep interior resets, paint enhancement and protection.
           </p>
 
-          <div class="hero-cta">
-            <a class="btn primary" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noopener">DM for a quote</a>
-            <a class="btn ghost" href="#gallery">See results</a>
+          <div class="hero__actions">
+            <a class="btn btn--primary" id="heroWhatsApp" href="#">Get a quote on WhatsApp</a>
+            <a class="btn btn--ghost" href="#packages">View packages</a>
           </div>
 
-          <div class="hero-badges">
-            <div class="badge">Mobile service</div>
-            <div class="badge">Kent / Medway</div>
-            <div class="badge">Quality finish</div>
+          <div class="trust">
+            <div class="trust__item"><div class="trust__title">Mobile</div><div class="trust__text">We come to you</div></div>
+            <div class="trust__item"><div class="trust__title">Premium</div><div class="trust__text">High-standard finish</div></div>
+            <div class="trust__item"><div class="trust__title">Straight</div><div class="trust__text">No rushed jobs</div></div>
           </div>
         </div>
 
-        <div class="hero-card">
-          <div class="hero-card__top">
-            <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="hero__card">
+          <div class="hero__cardTop">
+            <img class="mark" src="assets/images/gallery/atelier_logo_mark_dark.png" alt="" />
+            <span class="small">Fast replies • WhatsApp preferred</span>
           </div>
-          <div class="hero-card__body">
-            <h3>Fastest booking</h3>
-            <p>
-              Message on Instagram:
-              <a href="https://instagram.com/atelierautodetailing" target="_blank" rel="noopener">@atelierautodetailing</a>
-            </p>
-            <p class="small">Send: car + postcode + a few photos.</p>
+
+          <div class="hero__cardBody">
+            <div class="hero__note">
+              <strong>Fast quote format</strong>
+              <span>Send car + postcode + 4 photos (outside + inside). I’ll recommend the best package.</span>
+            </div>
+
+            <div class="hero__cardActions">
+              <a class="btn btn--primary btn--full" id="cardWhatsApp" href="#">WhatsApp now</a>
+              <a class="btn btn--ghost btn--full" href="tel:07508011007">Call</a>
+              <a class="btn btn--ghost btn--full" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="hero__fade" aria-hidden="true"></div>
     </section>
 
-    <section id="services" class="section">
+    <section class="section" id="services">
       <div class="container">
-        <h2>Services</h2>
-        <p class="section-sub">Choose a package or message for a quick quote.</p>
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>Focused, premium work — the stuff clients actually notice.</p>
+        </div>
 
         <div class="cards">
-          <div class="card">
-            <h3>Maintenance Clean</h3>
-            <p>Safe wash, wheels, tyres, quick interior tidy and finishing touches.</p>
-          </div>
-          <div class="card">
+          <article class="card">
             <h3>Interior Reset</h3>
-            <p>Deep vacuum, shampoo where needed, plastics cleaned, glass finished.</p>
-          </div>
-          <div class="card">
-            <h3>Signature Detail</h3>
-            <p>Exterior + interior detail, decontamination and protection top-up.</p>
-          </div>
+            <p>Deep vacuum, plastics cleaned, mats refreshed, glass clarity — the “new car” feeling.</p>
+          </article>
+
+          <article class="card">
+            <h3>Exterior Detail</h3>
+            <p>Safe wash process, wheels/arches, decontamination, and a clean, glossy finish.</p>
+          </article>
+
+          <article class="card">
+            <h3>Paint Enhancement</h3>
+            <p>Single-stage polish for gloss and clarity — perfect before summer or selling.</p>
+          </article>
+
+          <article class="card">
+            <h3>Protection Upgrade</h3>
+            <p>Sealant/wax or longer-lasting protection depending on what you choose.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="section section--alt">
+    <section class="section section--alt" id="packages">
       <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Gallery</h2>
-            <p class="section-sub">Recent finished results (after shots + a few before/after style angles).</p>
-          </div>
-          <a class="btn ghost" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noopener">
-            More on Instagram
-          </a>
+        <div class="section__head">
+          <h2>Packages</h2>
+          <p>“From” pricing. Final quote depends on vehicle size & condition.</p>
         </div>
 
-        <div class="gallery">
-          <figure class="shot"><img src="assets/images/gallery/alpha_01.jpg" alt="Detailing result" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/images/gallery/alpha_02.jpg" alt="Detailing result" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/images/gallery/alpha_03.jpg" alt="Detailing result" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/images/gallery/alpha_04.jpg" alt="Detailing result" loading="lazy"></figure>
+        <div class="pricing">
+          <article class="priceCard">
+            <h3>Maintenance Detail</h3>
+            <div class="price"><span class="price__from">from</span><span class="price__value">£65</span></div>
+            <ul class="bullets">
+              <li>Safe wash + dry</li><li>Wheels & tyres</li><li>Quick interior tidy</li><li>Glass cleaned</li>
+            </ul>
+            <a class="btn btn--ghost btn--full quoteBtn" data-package="Maintenance Detail (from £65)">Get quote</a>
+          </article>
 
-          <figure class="shot"><img src="assets/images/gallery/ash_01.jpg" alt="Detailing result" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/images/gallery/ash_02.jpg" alt="Detailing result" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/images/gallery/ash_03.jpg" alt="Detailing result" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/images/gallery/ash_04.jpg" alt="Detailing result" loading="lazy"></figure>
+          <article class="priceCard priceCard--featured">
+            <h3>Full Valet</h3>
+            <div class="price"><span class="price__from">from</span><span class="price__value">£120</span></div>
+            <ul class="bullets">
+              <li>Interior reset</li><li>Exterior detail + protection</li><li>Wheels/arches</li><li>Premium finish</li>
+            </ul>
+            <a class="btn btn--primary btn--full quoteBtn" data-package="Full Valet (from £120)">Get quote</a>
+          </article>
 
-          <figure class="shot"><img src="assets/images/gallery/dnd_01.jpg" alt="Detailing result" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/images/gallery/dnd_02.jpg" alt="Detailing result" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/images/gallery/dnd_03.jpg" alt="Detailing result" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/images/gallery/dnd_04.jpg" alt="Detailing result" loading="lazy"></figure>
+          <article class="priceCard">
+            <h3>Paint Enhancement</h3>
+            <div class="price"><span class="price__from">from</span><span class="price__value">£220</span></div>
+            <ul class="bullets">
+              <li>Prep wash + decon</li><li>Machine polish</li><li>Protection applied</li><li>Gloss upgrade</li>
+            </ul>
+            <a class="btn btn--ghost btn--full quoteBtn" data-package="Paint Enhancement (from £220)">Get quote</a>
+          </article>
+
+          <article class="priceCard">
+            <h3>Protection Upgrade</h3>
+            <div class="price"><span class="price__from">from</span><span class="price__value">£200</span></div>
+            <ul class="bullets">
+              <li>Deeper exterior clean</li><li>Decon (if needed)</li><li>Protection applied</li><li>Gloss finish</li>
+            </ul>
+            <a class="btn btn--ghost btn--full quoteBtn" data-package="Protection Upgrade (from £200)">Get quote</a>
+          </article>
         </div>
-
-        <p class="note">
-          Want more examples? Check Instagram:
-          <a href="https://instagram.com/atelierautodetailing" target="_blank" rel="noopener">@atelierautodetailing</a>
-        </p>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section class="section" id="gallery">
       <div class="container">
-        <h2>Contact</h2>
-        <p class="section-sub">DM on Instagram for the fastest response.</p>
+        <div class="section__head">
+          <h2>Results</h2>
+          <p>Tap any image to view. More on Instagram.</p>
+        </div>
+        <div class="gallery" id="galleryGrid"></div>
+      </div>
+    </section>
 
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Instagram</h3>
-            <p><a href="https://instagram.com/atelierautodetailing" target="_blank" rel="noopener">@atelierautodetailing</a></p>
+    <section class="section section--alt" id="booking">
+      <div class="container booking">
+        <div class="panel">
+          <h2>Book / Get a quote</h2>
+          <p class="lead">Fastest way: WhatsApp. Send car + postcode + 4 photos.</p>
+          <div class="panel__cta">
+            <a class="btn btn--primary btn--full" id="panelWhatsApp" href="#">Message on WhatsApp</a>
+            <a class="btn btn--ghost btn--full" href="tel:07508011007">Call 07508 011007</a>
+            <a class="btn btn--ghost btn--full" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noreferrer">Open Instagram</a>
           </div>
-          <div class="contact-card">
-            <h3>Area</h3>
-            <p>Kent / Medway (mobile)</p>
-          </div>
-          <div class="contact-card">
-            <h3>Quote format</h3>
-            <p>Send: car + postcode + 4 photos.</p>
-          </div>
+          <p class="fineprint">© <span id="year"></span> Atelier Auto Detailing</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Atelier Auto Detailing</p>
-      <a href="https://instagram.com/atelierautodetailing" target="_blank" rel="noopener">@atelierautodetailing</a>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img class="footer__logo" src="assets/images/gallery/atelier_logo_wordmark_light.png" alt="Atelier Auto Detailing" />
+      <div class="footer__links">
+        <a href="https://instagram.com/atelierautodetailing" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="tel:07508011007">Call</a>
+        <a id="footerWhatsApp" href="#">WhatsApp</a>
+      </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <div class="stickyCtas">
+    <a class="stickyBtn stickyBtn--whatsapp" id="stickyWhatsApp" href="#"><span>💬</span><span>WhatsApp</span></a>
+    <a class="stickyBtn stickyBtn--call" href="tel:07508011007"><span>📞</span><span>Call</span></a>
+    <a class="stickyBtn stickyBtn--ig" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noreferrer"><span>⌁</span><span>Instagram</span></a>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">✕</button>
+    <img class="lightbox__img" id="lightboxImg" alt="Gallery image" />
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
