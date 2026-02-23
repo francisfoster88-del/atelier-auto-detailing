@@ -7,9 +7,7 @@
   <meta name="description" content="Atelier Auto Detailing — Premium mobile car detailing in Kent. Interior resets, exterior detail, paint enhancement & protection." />
   <title>Atelier Auto Detailing | Premium Mobile Detailing in Kent</title>
 
-  <!-- Favicon (from your gallery folder) -->
   <link rel="icon" href="assets/images/gallery/favicon_512.png" />
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -18,17 +16,17 @@
     <div class="scroll-progress__bar" id="scrollBar"></div>
   </div>
 
-  <header class="header" id="top">
+  <header class="header header--dark" id="top">
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="Atelier Auto Detailing home">
-        <img class="brand__logo" src="assets/images/gallery/atelier_logo_wordmark_dark.png" alt="Atelier Auto Detailing logo" />
+        <img class="brand__logo" src="assets/images/gallery/atelier_logo_wordmark_light.png" alt="Atelier Auto Detailing logo" />
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <button class="nav-toggle nav-toggle--dark" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav" id="nav">
+      <nav class="nav nav--dark" id="nav">
         <a href="#services">Services</a>
         <a href="#packages">Packages</a>
         <a href="#gallery">Results</a>
@@ -54,8 +52,8 @@
 
       <div class="menu__ctas">
         <a class="btn btn--primary" id="menuWhatsApp" href="#">WhatsApp for a quote</a>
-        <a class="btn btn--ghost" href="tel:07508011007">Call 07508 011007</a>
-        <a class="btn btn--ghost" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noreferrer">Instagram</a>
+        <a class="btn btn--ghost menuGhost" href="tel:07508011007">Call 07508 011007</a>
+        <a class="btn btn--ghost menuGhost" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noreferrer">Instagram</a>
       </div>
 
       <p class="menu__fineprint">Premium mobile detailing in Kent • High-end finish • No shortcuts</p>
@@ -117,29 +115,15 @@
         </div>
 
         <div class="cards">
-          <article class="card">
-            <h3>Interior Reset</h3>
-            <p>Deep vacuum, plastics cleaned, mats refreshed, glass clarity — the “new car” feeling.</p>
-          </article>
-
-          <article class="card">
-            <h3>Exterior Detail</h3>
-            <p>Safe wash process, wheels/arches, decontamination, and a clean, glossy finish.</p>
-          </article>
-
-          <article class="card">
-            <h3>Paint Enhancement</h3>
-            <p>Single-stage polish for gloss and clarity — perfect before summer or selling.</p>
-          </article>
-
-          <article class="card">
-            <h3>Protection Upgrade</h3>
-            <p>Sealant/wax or longer-lasting protection depending on what you choose.</p>
-          </article>
+          <article class="card"><h3>Interior Reset</h3><p>Deep vacuum, plastics cleaned, mats refreshed, glass clarity — the “new car” feeling.</p></article>
+          <article class="card"><h3>Exterior Detail</h3><p>Safe wash process, wheels/arches, decontamination, and a clean, glossy finish.</p></article>
+          <article class="card"><h3>Paint Enhancement</h3><p>Single-stage polish for gloss and clarity — perfect before summer or selling.</p></article>
+          <article class="card"><h3>Protection Upgrade</h3><p>Sealant/wax or longer-lasting protection depending on what you choose.</p></article>
         </div>
       </div>
     </section>
 
+    <!-- PACKAGES (UPDATED PRICES + MEMBERSHIP) -->
     <section class="section section--alt" id="packages">
       <div class="container">
         <div class="section__head">
@@ -148,40 +132,64 @@
         </div>
 
         <div class="pricing">
-          <article class="priceCard">
-            <h3>Maintenance Detail</h3>
-            <div class="price"><span class="price__from">from</span><span class="price__value">£65</span></div>
-            <ul class="bullets">
-              <li>Safe wash + dry</li><li>Wheels & tyres</li><li>Quick interior tidy</li><li>Glass cleaned</li>
-            </ul>
-            <a class="btn btn--ghost btn--full quoteBtn" data-package="Maintenance Detail (from £65)">Get quote</a>
-          </article>
-
           <article class="priceCard priceCard--featured">
             <h3>Full Valet</h3>
-            <div class="price"><span class="price__from">from</span><span class="price__value">£120</span></div>
+            <div class="price">
+              <span class="price__from">from</span>
+              <span class="price__value">£120</span>
+            </div>
             <ul class="bullets">
-              <li>Interior reset</li><li>Exterior detail + protection</li><li>Wheels/arches</li><li>Premium finish</li>
+              <li>Interior reset</li>
+              <li>Exterior detail + protection</li>
+              <li>Wheels/arches + tyre dressing</li>
+              <li>Premium finish</li>
             </ul>
             <a class="btn btn--primary btn--full quoteBtn" data-package="Full Valet (from £120)">Get quote</a>
           </article>
 
           <article class="priceCard">
-            <h3>Paint Enhancement</h3>
-            <div class="price"><span class="price__from">from</span><span class="price__value">£220</span></div>
+            <h3>Signature Detail</h3>
+            <div class="price">
+              <span class="price__from">from</span>
+              <span class="price__value">£180</span>
+            </div>
             <ul class="bullets">
-              <li>Prep wash + decon</li><li>Machine polish</li><li>Protection applied</li><li>Gloss upgrade</li>
+              <li>Deeper interior + exterior</li>
+              <li>More time on problem areas</li>
+              <li>Decontamination (as needed)</li>
+              <li>Gloss & protection upgrade</li>
+            </ul>
+            <a class="btn btn--ghost btn--full quoteBtn" data-package="Signature Detail (from £180)">Get quote</a>
+          </article>
+
+          <article class="priceCard">
+            <h3>Paint Enhancement</h3>
+            <div class="price">
+              <span class="price__from">from</span>
+              <span class="price__value">£220</span>
+            </div>
+            <ul class="bullets">
+              <li>Prep wash + decon</li>
+              <li>Single-stage machine polish</li>
+              <li>Improves gloss + reduces haze</li>
+              <li>Protection applied after</li>
             </ul>
             <a class="btn btn--ghost btn--full quoteBtn" data-package="Paint Enhancement (from £220)">Get quote</a>
           </article>
 
           <article class="priceCard">
-            <h3>Protection Upgrade</h3>
-            <div class="price"><span class="price__from">from</span><span class="price__value">£200</span></div>
+            <h3>Membership (Every 4–6 Weeks)</h3>
+            <div class="price">
+              <span class="price__from">from</span>
+              <span class="price__value">£80</span>
+            </div>
             <ul class="bullets">
-              <li>Deeper exterior clean</li><li>Decon (if needed)</li><li>Protection applied</li><li>Gloss finish</li>
+              <li>Priority booking</li>
+              <li>Maintenance detail every 4–6 weeks</li>
+              <li>Keeps the car “just detailed”</li>
+              <li>Discount vs one-off visits</li>
             </ul>
-            <a class="btn btn--ghost btn--full quoteBtn" data-package="Protection Upgrade (from £200)">Get quote</a>
+            <a class="btn btn--ghost btn--full quoteBtn" data-package="Membership (every 4–6 weeks) (from £80)">Enquire</a>
           </article>
         </div>
       </div>
@@ -224,10 +232,19 @@
     </div>
   </footer>
 
-  <div class="stickyCtas">
-    <a class="stickyBtn stickyBtn--whatsapp" id="stickyWhatsApp" href="#"><span>💬</span><span>WhatsApp</span></a>
-    <a class="stickyBtn stickyBtn--call" href="tel:07508011007"><span>📞</span><span>Call</span></a>
-    <a class="stickyBtn stickyBtn--ig" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noreferrer"><span>⌁</span><span>Instagram</span></a>
+  <!-- Compact floating pill (does NOT block screen) -->
+  <div class="quickActions" id="quickActions" aria-label="Quick actions">
+    <button class="quickActions__toggle" id="qaToggle" aria-label="Open quick actions">
+      <span class="qaDot"></span>
+      <span>Quick actions</span>
+      <span class="qaChevron">▴</span>
+    </button>
+
+    <div class="quickActions__panel" id="qaPanel" aria-hidden="true">
+      <a class="qaBtn qaBtn--wa" id="stickyWhatsApp" href="#"><span>💬</span><span>WhatsApp</span></a>
+      <a class="qaBtn" href="tel:07508011007"><span>📞</span><span>Call</span></a>
+      <a class="qaBtn qaBtn--ig" href="https://instagram.com/atelierautodetailing" target="_blank" rel="noreferrer"><span>⌁</span><span>Instagram</span></a>
+    </div>
   </div>
 
   <div class="lightbox" id="lightbox" aria-hidden="true">
